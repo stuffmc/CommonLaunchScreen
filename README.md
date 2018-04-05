@@ -24,3 +24,7 @@ Open `CommonLaunchScreen.xcworkspace` and choose both `LaunchScreen.storyboard` 
 This is not happening if I move the `Base.lproj` in the Workspace.
 
 ![An option is to move that folder to your workspace](Base.jpg)
+
+### Interesting
+
+This is not happening with `ViewController.swift`, which I also reference _globally_. That is, as long as this file isn't in `Base.lproj`, so I suspect the interpretation of Xcode has something to do with a folder.
