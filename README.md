@@ -1,6 +1,6 @@
 # Xcode can't deal with 1 common file for 2 projects in a workspace — shows the wrong Project.
--
 
+-
 ### What does it actually mean?
 When you select the common `LaunchScreen.storyboard` file, Xcode will always show it as part of `App2`, although it technically is also of `App1`, as said per the `project.pbxproj`.
 
@@ -18,3 +18,9 @@ I then create a second App, similar, where I simply did the same editing of `pro
 ### How to reproduce?
 
 Open `CommonLaunchScreen.xcworkspace` and choose both `LaunchScreen.storyboard` files, you'll see how Xcode acts.
+
+### Work around
+
+This is not happening if I move the `Base.lproj` in the Workspace.
+
+![An option is to move that folder to your workspace](Base.jpg)
